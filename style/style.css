@@ -813,6 +813,7 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    /* مشان اخفي المسافة البيضا */
     padding: 60px 80px;
     position: relative;
     margin-bottom: 0;
