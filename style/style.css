@@ -1,0 +1,1202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 3000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar start */
+.nav {
+    width: 100%;
+    height: 65px;
+    background-color: rgba(4, 13, 57, 0.96);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    z-index: 1000;
+}
+
+.nav img {
+    width: auto;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: -6px;
+    float: left;
+}
+
+.nav ul {
+    list-style: none;
+    float: right;
+    margin-right: 200px;
+    margin-top: -10px;
+    padding-top: 12px;
+}
+
+.nav ul li {
+    display: inline-block;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 16px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.nav ul li a.red {
+    color: goldenrod;
+}
+
+.nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: goldenrod;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* navbar end */
+
+/* hero_imag start */
+.hero {
+    margin-top: 65px;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 65px);
+    position: relative;
+}
+
+.hero .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    padding: 10px;
+    border-radius: 6px;
+
+    width: 700px;
+    height: 100px;
+
+    font-size: large;
+    cursor: default;
+    color: aliceblue;
+}
+.text h2{
+    font-size: 50px;
+}
+.text p{
+    font-size: x-large;
+}
+.text button {
+    width: 150px;
+    height: 50px;
+    background-color: rgba(164, 113, 20, 0.868);
+    color: aliceblue;
+    border-radius: 6px;
+    font-size: x-large;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.text button:hover {
+    background-color: rgba(160, 78, 12, 0.868);
+    color: bisque;
+}
+
+/* hero_img end */
+
+/* Section1 title */
+.tile_1 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: large;
+    padding-top: 50px;
+}
+
+.blue {
+    color: rgba(4, 13, 57, 0.842);
+}
+
+.gold {
+    color: goldenrod;
+}
+
+.line {
+    background-color: rgba(4, 13, 57, 0.842);
+    width: 200px;
+    height: 5px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Section1 title End  */
+
+/* Sectione1 Boxes Start */
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+.welcome_parent {
+    width: 90%;
+    margin: 60px auto;
+}
+
+.welcome_parent::after {
+    content: "";
+    display: block;
+    clear: both;
+    padding: 50px;
+}
+
+.welcome_box {
+    float: left;
+    width: 30%;
+    height: 250px;
+    background-color: rgba(218, 165, 32, 0.647);
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+    margin-right: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.welcome_box1,
+.welcome_box2 {
+    margin-right: 5%;
+}
+
+.welcome_text {
+    margin: 10px 0;
+    padding: 10px;
+    color: rgba(4, 13, 57, 0.96);
+    position: relative;
+    z-index: 2;
+}
+
+.welcome_text h2 {
+    color: rgba(22, 31, 74, 0.96);
+}
+
+.btn {
+    padding: 10px;
+    margin: 25px;
+    background-color: rgba(4, 13, 57, 0.842);
+    color: goldenrod;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Sectione1 Boxes End */
+
+/* Overlay Start */
+.welcome-overlay {
+    position: absolute;
+    display: block;
+
+    background-color: rgba(4, 13, 57, 0.842);
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    opacity: 0;
+    transition: .7s;
+}
+
+.welcome_box:hover .welcome-overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.welcome_box:hover .welcome_text {
+    color: goldenrod;
+}
+
+.welcome_box:hover .welcome_text h2 {
+    color: gold;
+}
+
+.welcome_box .i {
+    position: relative;
+    z-index: 2;
+}
+
+.welcome_box:hover .i {
+    color: goldenrod;
+}
+
+.welcome_box:hover .btn {
+    background-color: goldenrod;
+    color: rgba(4, 13, 57, 0.842);
+}
+
+/* Overlay End */
+/* Section2 title Start */
+.tile_2 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: large;
+    padding-top: 50px;
+}
+
+/* Section2 title End */
+
+/* Sectione2 img start */
+.container1 {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(4, 13, 57, 0.416);
+    /* padding-top:1 ;
+    padding-bottom: 60px; */
+}
+
+.glary-parent {
+    width: 90%;
+    margin: -60px auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.glary-box {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 60px;
+    height: 250px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.glary-box1,
+.glary-box2,
+.glary-box4,
+.glary-box5 {
+    margin-right: 5%;
+}
+
+.glary-box3,
+.glary-box6 {
+    margin-right: 0;
+}
+
+.glary-img {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.glary-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.glary-parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Sectione2 img end */
+
+/* Sectione2 overlay start */
+.glary-overlay {
+    position: absolute;
+    display: block;
+
+    background-color: rgba(4, 13, 57, 0.684);
+
+    top: -100%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    transition: .7s;
+}
+
+.glary-img:hover .glary-overlay {
+    opacity: 1;
+    top: 0;
+}
+
+.glary-overlay h2 {
+    color: goldenrod;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    padding-top: 30px;
+}
+
+.glary-overlay p {
+    color: bisque;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.glary-icons {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.glary-icons a {
+    color: rgba(4, 13, 57, 0.842);
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+    /* line-height: 60px; */
+    font-size: 30px;
+
+    padding-top: 10px;
+    margin: 0px 10px;
+    border-radius: 50%;
+
+    background-color: rgba(215, 168, 49, 0.881);
+
+}
+
+/*  Sectione2 Overlay End */
+
+/* Sectione3 Boxes Start */
+.tile-3 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 50px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+.serv-parent {
+    width: 90%;
+    margin: 60px auto 0;
+}
+
+.serv-parent::after {
+    content: "";
+    display: block;
+    clear: both;
+    padding: 10px;
+}
+
+.serv-box {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 60px;
+    height: 250px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: goldenrod;
+}
+
+.serv-box1,
+.serv-box2,
+.serv-box4,
+.serv-box5 {
+    margin-right: 5%;
+}
+
+.serv-box3,
+.serv-box6 {
+    margin-right: 0;
+}
+
+.serv-text {
+    margin: 0;
+    padding: 15px;
+    color: rgba(4, 13, 57, 0.96);
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.serv-text h2 {
+    margin: 0 0 20px 20px;
+    text-align: left;
+}
+
+/* .serv-text p{
+    margin: 0;
+    text-align: left;
+    line-height: 2;
+} */
+/* Sectione3 Boxes End */
+
+/* Overlay Start */
+.serv-overlay {
+    position: absolute;
+    display: block;
+
+    background-color: rgba(4, 13, 57, 0.842);
+
+    top: 0;
+    left: 0;
+
+    width: 0;
+    height: 0;
+
+    opacity: 0;
+    transition: .7s;
+}
+
+.serv-box:hover .serv-overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.serv-box:hover .serv-text {
+    color: goldenrod;
+}
+
+.serv-box .i {
+    position: relative;
+    z-index: 2;
+}
+
+.serv-box:hover .i {
+    color: gold;
+}
+
+.serv-box:hover h2 {
+    color: gold;
+}
+
+/* Overlay End */
+/* Sectione3 Boxes End */
+
+/* Section4 Start */
+.tile-4 {
+    margin-top: 0px;
+    text-align: left;
+    font-size: x-large;
+    padding-top: 50px;
+    margin-left: 120px;
+}
+
+.line1 {
+    background-color: rgba(4, 13, 57, 0.842);
+    width: 100px;
+    height: 5px;
+    margin-top: 7px;
+    margin-left: 0;
+    position: relative;
+    z-index: 10;
+    text-align: left;
+}
+
+.w-parent {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.w-text {
+    float: left;
+    font-size: larger;
+    padding: 20px;
+    margin-left: 120px;
+    width: 50%;
+}
+
+.li {
+    padding: 10px;
+    list-style: none;
+}
+
+.w-img {
+    float: right;
+    width: 40%;
+    margin-left: 30px;
+}
+
+.w-img img {
+    width: 60%;
+    height: 10%;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -80px;
+    color: gold;
+    cursor: pointer;
+}
+
+.dots .i2:hover {
+    color: gold;
+}
+
+.dots .i2 {
+    color: rgba(4, 13, 57, 0.96);
+}
+
+/* Section4 End */
+
+/* Section5 Start */
+.container5 {
+    width: 100%;
+    height: 280px;
+    background-image: url(../images/b7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 80px;
+    position: relative;
+    margin: 60px auto 0;
+    /* مشان يعطيني المسافة البيضا فوق */
+}
+
+.sec5-parent {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.sec5-parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sec5-box {
+    float: left;
+    width: 22%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.b1,
+.b2,
+.b3 {
+    margin-right: 4%;
+}
+
+.b4 {
+    margin-right: 0;
+}
+
+.sec5-box i {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding-top: 14px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    color: rgba(4, 13, 57, 0.96);
+    font-size: 30px;
+    padding-top: 20px;
+    transition: .5s;
+}
+
+.sec5-box i:hover {
+    background-color: rgba(4, 13, 57, 0.96);
+    color: goldenrod;
+    top: -7px;
+    position: relative;
+}
+
+.sec5-box p {
+    font-size: 40px;
+    color: goldenrod;
+    margin: 0;
+}
+
+.sec5-box h2 {
+    font-size: 40px;
+    color: goldenrod;
+    margin: 0;
+}
+
+/* Section5 End */
+/* Section6 Start */
+.tile_6 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: large;
+    padding-top: 50px;
+}
+
+.sec6-parent {
+    width: 90%;
+    margin: 60px auto 0;
+}
+
+.sec6-parent::after {
+    content: "";
+    display: block;
+    clear: both;
+    padding: 50px;
+}
+
+.sec6-box {
+    float: left;
+    width: 30%;
+    height: 500px;
+    background-color: rgba(218, 165, 32, 0.647);
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+    margin-right: 5%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid rgba(4, 13, 57, 0.96);
+
+}
+
+.sec6-box3 {
+    margin-right: 0;
+}
+
+.sec6-text {
+    position: relative;
+    padding-top: 10px;
+    color: rgba(4, 13, 57, 0.96);
+    z-index: 2;
+}
+
+.sec6-text h1 {
+    font-size: 50px;
+    margin: 0;
+    color: goldenrod;
+}
+
+.p-icon span {
+    display: block;
+    font-size: 30;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sec6-text p {
+    font-size: 30px;
+    padding-top: 20px;
+
+}
+
+.p-icon {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(4, 13, 57, 0.842);
+    border-radius: 50%;
+    margin: 25px auto 5px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.btn1 {
+    padding: 10px;
+    margin: 25px;
+    background-color: rgba(4, 13, 57, 0.842);
+    color: goldenrod;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Overlay6 Start */
+.sec6-overlay {
+    position: absolute;
+    display: block;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sec6-box::before {
+    content: "";
+    position: absolute;
+
+    top: -100%;
+    left: 0;
+
+    width: 50%;
+    height: 100%;
+
+    background-color: rgba(4, 13, 57, 0.684);
+    transition: 1s;
+    z-index: 1;
+}
+
+.sec6-box::after {
+    content: "";
+    position: absolute;
+
+    bottom: -100%;
+    right: 0;
+
+    width: 50%;
+    height: 100%;
+
+    background-color: rgba(4, 13, 57, 0.684);
+    transition: 1s;
+    z-index: 1;
+}
+
+.sec6-box:hover::before {
+    top: 0;
+}
+
+.sec6-box:hover::after {
+    bottom: 0;
+}
+
+.btn1:hover {
+    background-color: goldenrod;
+    color: rgba(4, 13, 57, 0.842);
+}
+
+/* Overlay6 End */
+/* Sectione6 End */
+
+/* Sectione7 Start */
+.container7 {
+    width: 100%;
+    height: 280px;
+    background-image: url(../images/b7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 80px;
+    position: relative;
+}
+
+.sec7-parent::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sec7-box {
+    width: 45%;
+    height: 220px;
+    margin-top: 0px;
+    color: goldenrod;
+}
+
+.sec7-box h2 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.sec7-box h3 {
+    color: rgba(4, 13, 57, 0.96);
+    font-size: 25px;
+    text-align: left;
+}
+
+.sec7-box p {
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+    clear: both;
+}
+
+.sec7-box1 {
+    float: left;
+}
+
+.sec7-box2 {
+    margin-right: 0;
+    float: right;
+}
+
+.sec7-img {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Sectione7 End */
+
+/* Section8 Start */
+.team-parent {
+    text-align: center;
+}
+
+.team-box {
+    width: 30%;
+    height: 350px;
+
+    position: relative;
+
+    background-color: rgba(4, 13, 57, 0.96);
+
+    overflow: hidden;
+
+    text-align: center;
+    display: inline-block;
+    margin: 0 1%;
+    border-radius: 3px;
+
+    transition: 0.4s;
+}
+
+.team-img {
+    width: 80%;
+    height: 220px;
+    margin: 25px auto 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.team-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .7s;
+}
+
+.team-text {
+    position: relative;
+
+    padding: 15px;
+
+    z-index: 2;
+}
+
+.team-text h2 {
+    margin: 0;
+
+    font-size: 30px;
+
+    color: goldenrod;
+}
+
+.team-text p {
+    margin: 5px 0;
+
+    color: goldenrod;
+
+    font-size: 20px;
+}
+
+.team-overlay {
+    position: absolute;
+
+    top: -100%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(14, 53, 116, 0.532);
+
+    opacity: 0;
+
+    transition: .7s;
+
+    z-index: 1;
+}
+
+.team-box:hover .team-overlay {
+    opacity: 1;
+    top: 0;
+}
+
+.team-box:hover .team-text p {
+    color: gold;
+    transition: .7;
+}
+
+.team-box:hover .team-text h2 {
+    color: gold;
+    transition: .7s;
+}
+
+.team-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50px;
+    text-align: center;
+
+}
+
+.team-icon .ico {
+    /* تحت بعض */
+    display: block;
+
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+
+    /* مشان يكونوا تحت بعض ملزقين بالحافة */
+    margin: auto;
+    margin-right: 0;
+
+    text-align: center;
+
+    background-color: gold;
+    color: aliceblue;
+}
+
+/* القسم التاني  */
+.container8 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: antiquewhite;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+.news-parent {
+    text-align: center;
+}
+
+.news-box {
+    float: left;
+
+    width: 28%;
+    height: 700px;
+
+    margin-left: 4%;
+    border: none;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.news-box6 {
+    margin-right: 0;
+}
+
+.news-img {
+    width: 90%;
+    height: 350px;
+    margin: 10px auto;
+}
+
+.news-img img {
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+
+.news-text {
+    width: 100%;
+    margin: 20px;
+    text-align: left;
+}
+
+.news-text span {
+    margin-right: 20px;
+    font-size: medium;
+}
+
+.news-text .si {
+    color: goldenrod;
+}
+
+.news-text .i {
+    color: rgba(4, 13, 57, 0.96);
+}
+
+.news-text h4 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: rgba(4, 13, 57, 0.96);
+}
+
+.news-text p {
+    margin-bottom: 30px;
+    color: rgba(11, 61, 142, 0.863);
+}
+
+.news-text .btn8 {
+    width: 130px;
+    height: 50px;
+
+    background-color: rgba(4, 13, 57, 0.96);
+    color: goldenrod;
+
+    font-size: large;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: .7s;
+}
+
+.news-text:hover .btn8 {
+    background-color: goldenrod;
+    color: rgba(4, 13, 57, 0.96);
+}
+
+.news-overlay {
+    position: absolute;
+    display: block;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.news-box::before {
+    content: "";
+    position: absolute;
+
+    top: -50%;
+    left: -50%;
+
+    width: 50%;
+    height: 50%;
+
+    background-color: rgba(4, 13, 57, 0.684);
+    transition: 1s;
+    z-index: 1;
+}
+
+.news-box::after {
+    content: "";
+    position: absolute;
+
+    bottom: -50%;
+    right: -50%;
+
+    width: 50%;
+    height: 50%;
+
+    background-color: rgba(4, 13, 57, 0.684);
+    transition: 1s;
+    z-index: 1;
+}
+
+.news-box:hover::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.news-box:hover::after {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Section8 End */
+
+/* FOOTER start */
+.footer {
+    width: 100%;
+
+    background-color: rgba(4, 13, 57, 0.96);
+
+    text-align: center;
+    padding: 50px 0;
+    clear: both;
+}
+
+.footer img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.footer-icons {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footer-icons i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+
+    text-align: center;
+    background-color: #ffffff;
+    color: #171c2b;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0 4px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: .3s;
+}
+
+.footer-icons i:hover {
+    top: -5px;
+}
+
+.footer-icons .fi {
+    border-radius: 50%;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+/* FOOTER end */
