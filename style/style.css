@@ -2,10 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    height: 3000px;
+    height: 3000px;  
 }
 
 a {
@@ -693,7 +694,6 @@ a {
     cursor: pointer;
     overflow: hidden;
     border: 1px solid rgba(4, 13, 57, 0.96);
-
 }
 
 .sec6-box3 {
@@ -813,8 +813,10 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding: 80px;
+    padding: 60px 80px;
     position: relative;
+    margin-bottom: 0;
+
 }
 
 .sec7-parent::after {
