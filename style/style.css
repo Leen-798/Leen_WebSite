@@ -595,6 +595,7 @@ a {
     position: relative;
     margin: 60px auto 0;
     /* مشان يعطيني المسافة البيضا فوق */
+    cursor: pointer;
 }
 
 .sec5-parent {
@@ -817,7 +818,6 @@ a {
     padding: 60px 80px;
     position: relative;
     margin-bottom: 0;
-
 }
 
 .sec7-parent::after {
